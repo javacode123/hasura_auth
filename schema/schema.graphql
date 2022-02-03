@@ -1,0 +1,12 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    Login (name: String! password: String!): JsonWebToken
+}
+
+type Mutation {
+    Login (name: String! password: String!): JsonWebToken
+}

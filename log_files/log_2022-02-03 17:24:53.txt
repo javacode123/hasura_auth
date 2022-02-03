@@ -1,0 +1,16 @@
+[36mINFO[0m[0000]/Users/bytedance/go/src/github.com/hasura_auth/server.go:18 main.main() init schame: 
+ schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    Login (name: String! password: String!): JsonWebToken
+}
+
+type Mutation {
+    Login (name: String! password: String!): JsonWebToken
+}
+type JsonWebToken {
+    token : String!
+} 
